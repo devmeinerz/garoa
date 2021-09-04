@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+@font-face {
+    font-family: BerthaMelanie;
+    src: url('/assets/fonts/BerthaMelanie.ttf')  format('truetype');
+  }
+body{
+    background-image: url(./assets/images/garoa_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+/* ============================== MAIN =================================== */
+
+.container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50%;
+    transform: translate(-50%);
+    width: 100vw;
+    height: 60vh;
+    text-align: center;
+    font-family: BerthaMelanie;
+}
+.container__texto h1{
+    font-size: 18vh;
+    color: #ffffff;
+    text-shadow: 2px 2px 3px #0000004d;
+    padding: 1vh;
+}
+.container__texto h2{
+    font-size: 3vh;
+    color: #ffffff;
+    text-shadow: 2px 2px 3px #0000004d;
+    padding: 1vh;
+    margin-top: -4vh;
+}
+.container__controles{
+    width: 50%;
+    margin-top: 4vh;
+}
+.container__controles .slider{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 50%;
+    height: 25px;
+    border-radius: 10px;
+    background: #ffffffb0;
+    box-shadow: 2px 2px 3px #0000004d;
+    outline: none;
+}
+.container__controles .slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
+    background: #04AA6D;
+    cursor: pointer;
+}
+.container__controles .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ============================== FOOTER =================================== */
+
+.footer{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    width: 100%;
+    height: 3.5vh;
+    background-color: #ffffff63;
+}
+.footer span{
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 1.5vh;
+    text-align: center;
+}
