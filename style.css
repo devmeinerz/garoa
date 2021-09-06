@@ -164,3 +164,37 @@ input[type=range]::-ms-thumb:hover{
     font-size: 1.5vh;
     text-align: center;
 }
+
+/* ============================== RESPONSIVIDADE =================================== */
+
+@media screen and (max-width: 425px){
+    .container__texto{
+        margin-top: 20%;
+    }
+    .container__texto h1{
+        font-size: 10vh;
+    }
+    .container__texto h2{
+        font-size: 2vh;
+        margin-left: 8vh;
+        margin-top: -8vh;
+    }
+    .container__controles{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20vh;
+        width: 70vh;
+    }
+    .icones{
+        position: absolute;
+        display: flex;
+        width: 3vh;
+        margin-top: 2vh;
+        margin-left: -4vh;
+    }
+    input[type=range]{
+        width: 25vh;
+    }
+}
