@@ -7,7 +7,11 @@
 @font-face {
     font-family: BerthaMelanie;
     src: url('/assets/fonts/BerthaMelanie.ttf')  format('truetype');
-  }
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
 body{
     background-image: url(./assets/images/garoa_background.jpg);
     background-repeat: no-repeat;
@@ -19,71 +23,112 @@ body{
 /* ============================== MAIN =================================== */
 
 .container{
-    position: absolute;
+    background-image: url(/assets/images/rain-drop.gif);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 50%;
+    margin-left: 50%; 
     transform: translate(-50%);
     width: 100vw;
-    height: 60vh;
+    height: 100vh;
     text-align: center;
     font-family: BerthaMelanie;
 }
 .container__texto h1{
-    font-size: 18vh;
+    font-size: 16.5vh;
     color: #ffffff;
-    text-shadow: 2px 2px 3px #0000004d;
+    text-shadow: 2px 2px 3px #00000015;
     padding: 1vh;
 }
 .container__texto h2{
     font-size: 3vh;
     color: #ffffff;
-    text-shadow: 2px 2px 3px #0000004d;
+    text-shadow: 2px 2px 3px #00000015;
     padding: 1vh;
     margin-top: -4vh;
 }
 .container__controles{
-    width: 50%;
-    margin-top: 4vh;
+    width: 100vh;
 }
-.container__controles .slider{
-    -webkit-appearance: none;
-    appearance: none;
-    width: 50%;
-    height: 25px;
-    border-radius: 10px;
-    background: #ffffffb0;
-    box-shadow: 2px 2px 3px #0000004d;
-    outline: none;
+
+.icones{
+    position: absolute;
+    display: flex;
+    width: 5vh;
+    margin-top: 1vh;
+    margin-left: -6vh;
+
+
+
 }
-.container__controles .slider::-webkit-slider-thumb{
+
+
+
+
+
+/* =================== CUSTOMIZAÇÃO DO PLAYER DE AUDIO ==================== */
+
+input[type=range]{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1vh;
+    width: 40vh;
+    height: 5vh;
     -webkit-appearance: none;
-    appearance: none;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%; 
-    background: #04AA6D;
+    background: #ffffff00;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    height: 1.5vh;
     cursor: pointer;
+    border-radius: 50vh;
+    background: #ffffff5d;
 }
-.container__controles .slider::-moz-range-thumb {
-    width: 25px;
-    height: 25px;
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 3vh;
+    width: 3vh;
     border-radius: 50%;
-    background: #04AA6D;
+    background: #ffffff;
+    box-shadow: 1px 1px 5px 0px #2c2c2c6e;
     cursor: pointer;
-}
+    margin-top: -0.9vh;
+  }
 
+  input[type=range]::-moz-range-track {
+    height: 1.5vh;
+    cursor: pointer;
+    border-radius: 50vh;
+    background: #ffffff5d;
+  }
+  input[type=range]::-moz-range-thumb {
+    -webkit-appearance: none;
+    height: 3vh;
+    width: 3vh;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: 1px 1px 5px 0px #2c2c2c6e;
+    cursor: pointer;
+    margin-top: -0.9vh;
+  }
 
-
-
-
-
-
-
-
-
+  input[type=range]::-ms-track {
+    height: 1.5vh;
+    cursor: pointer;
+    border-radius: 50vh;
+    background: #ffffff5d;
+  }
+  input[type=range]::-ms-thumb {
+    -webkit-appearance: none;
+    height: 3vh;
+    width: 3vh;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: 1px 1px 5px 0px #2c2c2c6e;
+    cursor: pointer;
+    margin-top: -0.9vh;
+  }
 
 /* ============================== FOOTER =================================== */
 
@@ -95,7 +140,7 @@ body{
     bottom: 0;
     width: 100%;
     height: 3.5vh;
-    background-color: #ffffff63;
+    background-color: #ffffff2d;
 }
 .footer span{
     color: #ffffff;

@@ -7,34 +7,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" class="css">
+    <link rel="stylesheet" href="/style.css" class="css">
     <title>Garoa</title>
 </head>
 
 <body>
+
     <main class="container">
+
         <div class="container__texto">
             <h1>Garoa</h1>
-            <h2>Som ambiente</h2>
+            <h2>Ambient sound</h2>
         </div>
-        <div class="container__controles">
-            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+
+        <div id="container__controles">
+            <audio id="audio01" src="/assets/sounds/chuva.wav" type="audio/wav" autoplay="true" loop="true"></audio>
+            <img class="icones" src="assets/images/rain.png">
+            <input id="volume--audio01" type="range" max="100" min="0" value="50" step="1"
+                onchange="setVolume1(this.value)" />
+
+            <audio id="audio02" src="/assets/sounds/trovao.mp3" type="audio/mp3" autoplay="true" loop="true"></audio>
+            <img class="icones" src="assets/images/bolt.png">
+            <input id="volume--audio02" type="range" max="100" min="0" value="5" step="1"
+                onchange="setVolume2(this.value)" />
+
+            <audio id="audio03" src="/assets/sounds/vento.wav" type="audio/wav" autoplay="true" loop="true"></audio>
+            <img class="icones" src="assets/images/wind.png">
+            <input id="volume--audio03" type="range" max="100" min="0" value="5" step="1"
+                onchange="setVolume3(this.value)" />
+
         </div>
-        <div class="container__controles">
-            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-        </div>
-        <div class="container__controles">
-            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-        </div>
+
     </main>
 
     <footer class="footer">
-        <span>Copyright © 2021, Raul Meinerz - Todos os diretos reservados</span>
+        <span>Copyright © 2021, <a href="https://www.linkedin.com/in/raul-meinerz/" target="blank">Raul Meinerz</a>
+            -
+            Todos os diretos reservados</span>
     </footer>
 
-    <script src="script.js">
 
-    </script>
+
+    <script src="/script.js"></script>
 </body>
 
 </html>
