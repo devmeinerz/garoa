@@ -15,28 +15,36 @@
     <main>
 
         <div id="container">
-            <h1>Garoa</h1>
-            <h2>Ambient sound</h2>
 
-            <img class="icones" id="rain" type="image" src="./assets/images/rain.png"/>
-            <audio id="audio01" src="./assets/sounds/chuva.wav" type="audio/wav" loop="loop"></audio>
-            <input type="range" max="100" min="0" value="50" step="1" onchange="setVolume1(this.value)" />
-            <input class="icones-play" id="rain-play" type="image" src="./assets/images/play.png" onclick="playOrPause01()" />
+            <div id="container__texto">
+                <h1>Garoa</h1>
+                <h2>Ambient sound</h2>
+            </div>
 
-            <img class="icones" id="bolt" type="image" src="./assets/images/bolt.png"/>
-            <audio id="audio02" src="./assets/sounds/trovao.wav" type="audio/wav" loop="loop"></audio>
-            <input type="range" max="100" min="0" value="50" step="1" onchange="setVolume2(this.value)" />
-            <input class="icones-play" id="bolt-play" type="image" src="./assets/images/play.png" onclick="playOrPause02()" />
-
-            <img class="icones" id="wind" type="image" src="./assets/images/wind.png"/>
-            <audio id="audio03" src="./assets/sounds/vento.wav" type="audio/wav" loop="loop"></audio>
-            <input type="range" max="100" min="0" value="50" step="1" onchange="setVolume3(this.value)" />
-            <input class="icones-play" id="wind-play" type="image" src="./assets/images/play.png" onclick="playOrPause03()" />
-
-            <img class="icones" id="wave" type="image" src="./assets/images/wave.png"/>
-            <audio id="audio04" src="./assets/sounds/ondas.wav" type="audio/wav" loop="loop"></audio>
-            <input type="range" max="100" min="0" value="50" step="1" onchange="setVolume4(this.value)" />
-            <input class="icones-play" id="wave-play" type="image" src="./assets/images/play.png" onclick="playOrPause04()" />
+            <div class="container__audio">
+                <img class="icones" id="rain" type="image" src="./assets/images/rain.png" />
+                <audio id="audio01" src="./assets/sounds/chuva.wav" type="audio/wav" loop="loop"></audio>
+                <input type="range" max="100" min="0" value="50" step="1" onchange="setVolume1(this.value)" />
+                <input class="icones-play" id="rain-play" type="image" src="./assets/images/play.png" onclick="playOrPause01()" />
+            </div>
+            <div class="container__audio">
+                <img class="icones" id="bolt" type="image" src="./assets/images/bolt.png" />
+                <audio id="audio02" src="./assets/sounds/trovao.wav" type="audio/wav" loop="loop"></audio>
+                <input type="range" max="100" min="0" value="50" step="1" onchange="setVolume2(this.value)" />
+                <input class="icones-play" id="bolt-play" type="image" src="./assets/images/play.png" onclick="playOrPause02()" />
+            </div>
+            <div class="container__audio">
+                <img class="icones" id="wind" type="image" src="./assets/images/wind.png" />
+                <audio id="audio03" src="./assets/sounds/vento.wav" type="audio/wav" loop="loop"></audio>
+                <input type="range" max="100" min="0" value="50" step="1" onchange="setVolume3(this.value)" />
+                <input class="icones-play" id="wind-play" type="image" src="./assets/images/play.png" onclick="playOrPause03()" />
+            </div>
+            <div class="container__audio">
+                <img class="icones" id="wave" type="image" src="./assets/images/wave.png" />
+                <audio id="audio04" src="./assets/sounds/ondas.wav" type="audio/wav" loop="loop"></audio>
+                <input type="range" max="100" min="0" value="50" step="1" onchange="setVolume4(this.value)" />
+                <input class="icones-play" id="wave-play" type="image" src="./assets/images/play.png" onclick="playOrPause04()" />
+            </div>
 
         </div>
 

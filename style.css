@@ -19,53 +19,60 @@ body{
     background-image: url(./assets/images/garoa_background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 
 /* ============================== MAIN =================================== */
 
 main{
-    position: relative;
     background-image: url(./assets/images/rain-drop.gif);
-    margin-left: 50vw; 
-    transform: translate(-50vw);
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     text-align: center;
 }
 #container{
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 5vh;
+    margin-left: 50%; 
+    transform: translate(-50%);
+    width: 90%;
+    max-width: 1024px;
+    margin-top: 5%;
+}
+#container__texto{
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 #container h1{
     color: #ffffff;
-    font-size: 15vh;
-    padding: 2vh;
+    font-size: 14vh;
+    padding: 0 2vh 0 2vh;
     font-family: Laughing;
 }
 #container h2{
     position: absolute;
     color: #ffffff;
     font-size: 3.5vh;
-    top: 25vh;
-    padding-left: 10vh;
+    top: 21vh;
+    padding-left: 15vh;
     font-family: Laughing;
 }
+.container__audio{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    width: 52vh;
+    padding-top: 3.5vh;
+}
 #container .icones{
-    position: relative;
-    right: 23vh;
-    top: 2.5vh;
     width: 5.5vh;
 }
 #container .icones-play{
-    position: relative;
-    left: 22.5vh;
-    bottom: 1.9vh;
     width: 3.5vh;
 }
 
@@ -175,17 +182,16 @@ footer span{
     }
     #container h2{
         font-size: 3vh;
-        top: 20vh;
-        margin-bottom: 1vh;
+        top: 18vh;
+        padding-left: 13vh;
+    }
+    .container__audio{
+        width: 47vh;
     }
     #container .icones{
-        right: 19vh;
-        top: 2.5vh;
         width: 5vh;
     }
     #container .icones-play{
-        left: 18.5vh;
-        bottom: 2.2vh;
         width: 4vh;
     }
     input[type=range]{
@@ -198,5 +204,39 @@ footer span{
     }
     footer span{
         font-size: 1.5vh;
+    }
+}
+
+@media (max-width: 372px){
+    #container{
+        margin-top: 5vh;
+    }
+    #container h1{
+        font-size: 9vh;
+    }
+    #container h2{
+        font-size: 2vh;
+        top: 13.5vh;
+        padding-left: 12vh;
+    }
+    .container__audio{
+        width: 30vh;
+    }
+    #container .icones{
+        width: 4vh;
+    }
+    #container .icones-play{
+        width: 3vh;
+    }
+    input[type=range]{
+        margin: -6.2vh;
+        width: 15vh;
+        height: 13vh;
+    }
+    footer{
+        height: 2.9vh;
+    }
+    footer span{
+        font-size: 1.1vh;
     }
 }
