@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    border: 0;
     box-sizing: border-box;
     overflow: hidden;
     text-decoration: none;
@@ -29,42 +30,37 @@ main{
     background-image: url(./assets/images/rain-drop.gif);
     width: 100%;
     height: 100vh;
-    text-align: center;
 }
 #container{
+    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 50%; 
+    top: 5%;
+    left: 50%; 
     transform: translate(-50%);
     width: 90%;
     max-width: 1024px;
-    margin-top: 5%;
 }
 #container__texto{
-    position: relative;
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    max-width: 1024px;
+    color: #ffffff;
+    font-family: Laughing;
+    text-align: center;
 }
 #container h1{
-    color: #ffffff;
     font-size: 14vh;
-    padding: 0 2vh 0 2vh;
-    font-family: Laughing;
+    margin-bottom: -6vh;
 }
 #container h2{
-    position: absolute;
-    color: #ffffff;
+    padding-left: 10vh;
     font-size: 3.5vh;
-    top: 21vh;
-    padding-left: 15vh;
-    font-family: Laughing;
 }
 .container__audio{
     display: flex;
     justify-content: space-around;
-    align-content: center;
     align-items: center;
     width: 52vh;
     padding-top: 3.5vh;
@@ -173,68 +169,47 @@ footer span{
 
 /* ============================== RESPONSIVIDADE =================================== */
 
-@media (max-width: 450px){
-    #container{
-        margin-top: 5vh;
-    }
+@media (max-width: 450px) and (orientation: portrait){
     #container h1{
         font-size: 12vh;
+        margin-bottom: -5.5vh;
     }
     #container h2{
+        padding-left: 8vh;
         font-size: 3vh;
-        top: 18vh;
-        padding-left: 13vh;
     }
     .container__audio{
-        width: 47vh;
+        width: 38vh;
+    }
+    input[type=range]{
+        width: 25vh;
+    }
+    footer span{
+        font-size: 1.3vh;
+    }
+}
+
+@media (max-width: 330px) and (orientation: portrait){
+    #container h1{
+        font-size: 8vh;
+        margin-bottom: -3.5vh;
+    }
+    #container h2{
+        padding-left: 8vh;
+        font-size: 1.9vh;
+    }
+    .container__audio{
+        width: 38vh;
+        justify-content: space-evenly;
     }
     #container .icones{
         width: 5vh;
     }
     #container .icones-play{
-        width: 4vh;
-    }
-    input[type=range]{
-        margin: -6.2vh;
-        width: 30vh;
-        height: 13vh;
-    }
-    footer{
-        height: 2.9vh;
-    }
-    footer span{
-        font-size: 1.5vh;
-    }
-}
-
-@media (max-width: 372px){
-    #container{
-        margin-top: 5vh;
-    }
-    #container h1{
-        font-size: 9vh;
-    }
-    #container h2{
-        font-size: 2vh;
-        top: 13.5vh;
-        padding-left: 12vh;
-    }
-    .container__audio{
-        width: 30vh;
-    }
-    #container .icones{
-        width: 4vh;
-    }
-    #container .icones-play{
         width: 3vh;
     }
     input[type=range]{
-        margin: -6.2vh;
         width: 15vh;
-        height: 13vh;
-    }
-    footer{
-        height: 2.9vh;
     }
     footer span{
         font-size: 1.1vh;
