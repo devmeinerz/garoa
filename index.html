@@ -12,52 +12,44 @@
 </head>
 
 <body>
+    <main>
 
-    <main class="container">
-
-        <div class="container__texto">
+        <div id="container">
             <h1>Garoa</h1>
             <h2>Ambient sound</h2>
-        </div>
 
-        <div id="container__controles">
-            <audio id="audio01" src="./assets/sounds/chuva.wav" type="audio/wav" autoplay="true"
-                loop="loop"></audio>
-            <img class="icones" src="./assets/images/rain.png">
-            <input id="volume--audio01" type="range" max="100" min="0" value="50" step="1"
-                onchange="setVolume1(this.value)" />
+            <img class="icones" id="rain" type="image" src="./assets/images/rain.png"/>
+            <audio id="audio01" src="./assets/sounds/chuva.wav" type="audio/wav" loop="loop"></audio>
+            <input type="range" max="100" min="0" value="50" step="1" onchange="setVolume1(this.value)" />
+            <input class="icones-play" id="rain-play" type="image" src="./assets/images/play.png" onclick="playOrPause01()" />
 
-            <audio id="audio02" src="./assets/sounds/trovao.wav" type="audio/wav" autoplay="true"
-                loop="loop"></audio>
-            <img class="icones" src="./assets/images/bolt.png">
-            <input id="volume--audio02" type="range" max="100" min="0" value="5" step="1"
-                onchange="setVolume2(this.value)" />
+            <img class="icones" id="bolt" type="image" src="./assets/images/bolt.png"/>
+            <audio id="audio02" src="./assets/sounds/trovao.wav" type="audio/wav" loop="loop"></audio>
+            <input type="range" max="100" min="0" value="50" step="1" onchange="setVolume2(this.value)" />
+            <input class="icones-play" id="bolt-play" type="image" src="./assets/images/play.png" onclick="playOrPause02()" />
 
-            <audio id="audio03" src="./assets/sounds/vento.wav" type="audio/wav" autoplay="true"
-                loop="loop"></audio>
-            <img class="icones" src="./assets/images/wind.png">
-            <input id="volume--audio03" type="range" max="100" min="0" value="5" step="1"
-                onchange="setVolume3(this.value)" />
+            <img class="icones" id="wind" type="image" src="./assets/images/wind.png"/>
+            <audio id="audio03" src="./assets/sounds/vento.wav" type="audio/wav" loop="loop"></audio>
+            <input type="range" max="100" min="0" value="50" step="1" onchange="setVolume3(this.value)" />
+            <input class="icones-play" id="wind-play" type="image" src="./assets/images/play.png" onclick="playOrPause03()" />
 
-            <audio id="audio04" src="./assets/sounds/ondas.wav" type="audio/wav" autoplay="true"
-                loop="loop"></audio>
-            <img class="icones" src="./assets/images/wave.png">
-            <input id="volume--audio04" type="range" max="100" min="0" value="5" step="1"
-                onchange="setVolume4(this.value)" />
+            <img class="icones" id="wave" type="image" src="./assets/images/wave.png"/>
+            <audio id="audio04" src="./assets/sounds/ondas.wav" type="audio/wav" loop="loop"></audio>
+            <input type="range" max="100" min="0" value="50" step="1" onchange="setVolume4(this.value)" />
+            <input class="icones-play" id="wave-play" type="image" src="./assets/images/play.png" onclick="playOrPause04()" />
 
         </div>
 
     </main>
 
-    <footer class="footer">
+    <footer>
         <span>Copyright © 2021, <a href="https://www.linkedin.com/in/raul-meinerz/" target="blank">Raul Meinerz</a>
             -
             Todos os diretos reservados</span>
     </footer>
 
-
-
     <script src="./script.js"></script>
+
 </body>
 
 </html>
