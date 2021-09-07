@@ -27,40 +27,40 @@ function playOrPause01(){
     
     if (audio01.paused){
         audio01.play();
-        botaoPlay01.src="/assets/images/pause.png";
+        botaoPlay01.src="./assets/images/pause.png";
     }else{
         audio01.pause();
-        botaoPlay01.src="/assets/images/play.png";
+        botaoPlay01.src="./assets/images/play.png";
     }
 };
 
 function playOrPause02(){
     if (audio02.paused){
         audio02.play();
-        botaoPlay02.src="/assets/images/pause.png";
+        botaoPlay02.src="./assets/images/pause.png";
     }else{
         audio02.pause();
-        botaoPlay02.src="/assets/images/play.png";
+        botaoPlay02.src="./assets/images/play.png";
     }
 };
 
 function playOrPause03(){
     if (audio03.paused){
         audio03.play();
-        botaoPlay03.src="/assets/images/pause.png";
+        botaoPlay03.src="./assets/images/pause.png";
     }else{
         audio03.pause();
-        botaoPlay03.src="/assets/images/play.png";
+        botaoPlay03.src="./assets/images/play.png";
     }
 };
 
 function playOrPause04(){
     if (audio04.paused){
         audio04.play();
-        botaoPlay04.src="/assets/images/pause.png";
+        botaoPlay04.src="./assets/images/pause.png";
     }else{
         audio04.pause();
-        botaoPlay04.src="/assets/images/play.png";
+        botaoPlay04.src="./assets/images/play.png";
     }
 };
 
