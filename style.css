@@ -48,12 +48,11 @@ main{
     padding: 2vh;
     font-family: Laughing;
 }
-#cut{
-    margin-top: -9vh;
-}
 #container h2{
+    position: absolute;
     color: #ffffff;
     font-size: 3.5vh;
+    top: 25vh;
     padding-left: 10vh;
     font-family: Laughing;
 }
@@ -174,12 +173,9 @@ footer span{
     #container h1{
         font-size: 12vh;
     }
-    #cut{
-        margin-top: 0.1vh;
-    }
     #container h2{
         font-size: 3vh;
-        margin-top: -7.8vh;
+        top: 20vh;
         margin-bottom: 1vh;
     }
     #container .icones{
