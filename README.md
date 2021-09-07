@@ -6,7 +6,9 @@ Página com sons naturais, legal para deixar como fundo para estudo, leitura, et
 Intuito de praticar HTML, CSS e JS.
 
 Alguns pontos a observar:
-- fiz uma responsividade para mobile apenas (comecei pelo desktop, mesmo sabendo que já é uma boa prática iniciar pelo mobile) e testei algumas uniades de medida, testei vh e rem, provavelmente não ficará legal em todos dispositivos, continuo praticando até chegar num consenso ideal.
+- havina feito uma responsividade para mobile apenas (comecei pelo desktop, mesmo sabendo que já é uma boa prática iniciar pelo mobile) e testei algumas uniades de medida, testei vh e rem, provavelmente não ficará legal em todos dispositivos, continuo praticando até chegar num consenso ideal.
+
+- o título da página era, originalmente, feito com h1 e h2. Como o h2 precisava de uma margin negativa para ficar mais "colado" ao h1, isso acarretava problemas em dispositivos menores. Depois de tentar várias soluções acabei trocando os títulos de texto por uma imagem fixa.
 
 - os arquivos de som são nativos. Queria fazer alguma opção que carregasse os audios somente quando o play for acionado, ou que a página toda fosse carregada completamente após o download dos arquivos. Creio que envolva alguma função onload no HTML, mas ainda não sei como aplicar.
 
