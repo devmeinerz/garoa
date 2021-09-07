@@ -1,5 +1,7 @@
 # Garoa - Ambient sound
 
+[Garoa - Ambient sound](https://devmeinerz.github.io/garoa)
+
 Página com sons naturais, legal para deixar como fundo para estudo, leitura, etc.
 Intuito de praticar HTML, CSS e JS.
 
@@ -14,6 +16,6 @@ Alguns pontos a observar:
 
 - para qualquer dica ou sujestão, será um prazer conversar, tendo em vista que comecei há pouco tempo.
 
-- [Meu linkedin](https://www.linkedin.com/in/raul-meinerz/)
+[Meu linkedin](https://www.linkedin.com/in/raul-meinerz/)
 
 ![](https://github.com/devmeinerz/garoa/blob/main/assets/add/garoa.png)
