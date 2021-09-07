@@ -48,11 +48,13 @@ main{
     padding: 2vh;
     font-family: Laughing;
 }
+#cut{
+    margin-top: -9vh;
+}
 #container h2{
     color: #ffffff;
     font-size: 3.5vh;
     padding-left: 10vh;
-    margin-top: -9vh;
     font-family: Laughing;
 }
 #container .icones{
