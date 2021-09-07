@@ -4,7 +4,7 @@ Página com sons naturais, legal para deixar como fundo para estudo, leitura, et
 Intuito de praticar HTML, CSS e JS.
 
 Alguns pontos a observar:
-- fiz uma responsividade para mobile e testei algumas uniades de medida, sendo que vh funcionou melhor para texto, provavelmente não ficará legal em todos dispositivos, continuo praticando até chegar num consenso ideal.
+- fiz uma responsividade para mobile apenas (comecei pelo desktop, mesmo sabendo que já é uma boa prática iniciar pelo mobile) e testei algumas uniades de medida, testei vh e rem, provavelmente não ficará legal em todos dispositivos, continuo praticando até chegar num consenso ideal.
 
 - os arquivos de som são nativos. Queria fazer alguma opção que carregasse os audios somente quando o play for acionado, ou que a página toda fosse carregada completamente após o download dos arquivos. Creio que envolva alguma função onload no HTML, mas ainda não sei como aplicar.
 
@@ -16,3 +16,4 @@ Alguns pontos a observar:
 
 - [Meu linkedin](https://www.linkedin.com/in/raul-meinerz/)
 
+![](https://github.com/devmeinerz/garoa/blob/main/assets/add/garoa.png)
